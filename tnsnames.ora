@@ -1,0 +1,126 @@
+
+
+#DSCRTO.world=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles42)(Port=1521))
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles42)(Port=1526)))
+# (CONNECT_DATA=(SID=DSCRTO)))
+ 
+ 
+DSCRTO=(DESCRIPTION=(ADDRESS_LIST=
+ (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=AQUILESMS37D.banbta.net)(Port=1526)))
+ (CONNECT_DATA=(SID=DSCRTO))) 
+ 
+#DSCRC.WORLD =
+#  (DESCRIPTION =
+#    (ADDRESS_LIST =
+#      (ADDRESS = (PROTOCOL = TCP)(HOST = AQUILES42)(PORT = 1521))
+#    )
+#    (CONNECT_DATA =
+#      (SERVICE_NAME = DSCRC)
+#    )
+#  )
+
+#PRCRTO=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=AQUILES48)(Port=1526))
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=AQUILES48)(Port=1526)))
+# (CONNECT_DATA=(SID=PRCRTO))) 
+  
+#DSSCE.world=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=scansced.bancodebogota.net)(Port=1521))
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=scansced.bancodebogota.net)(Port=1526)))
+# (CONNECT_DATA=(SERVICE_NAME = SCE_CCP)))
+ 
+ 
+#PRCRC.world=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles48)(Port=1521))
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles48)(Port=1526)))
+# (CONNECT_DATA=(SID=PRCRC))) 
+ 
+#DSDMK.world=
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = 10.85.84.142)(PORT = 1521))
+#    (CONNECT_DATA =
+#      (SERVER = DEDICATED)
+#      (SERVICE_NAME = DSDMK)
+#    )
+#  )
+  
+  
+#Desarrollo SARC
+DSSR.world=(DESCRIPTION=(ADDRESS_LIST=
+ (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles42)(Port=1521))
+ (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles42)(Port=1526)))
+ (CONNECT_DATA=(SID=DSSR)))
+ 
+
+#DSSR=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=AQUILESMS37D.banbta.net)(Port=1526)))
+# (CONNECT_DATA=(SID=DSSR)))
+ 
+#Pruebas SARC
+#PRSR.world=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles48)(Port=1526)))
+# (CONNECT_DATA=(SID=PRSR)))
+
+ #acceso a amb. produccion de SCE
+#PDSCE.world=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=neptuno05)(Port=1521))
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=neptuno05)(Port=1526)))
+# (CONNECT_DATA=(SID=PDSCE)))
+
+PRSR =(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = AQUILESMS37P.banbta.net)(PORT = 1526)))(CONNECT_DATA =(SID = PRSR)(SERVER = DEDICATED)))
+
+DSSR =(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = AQUILESMS37D.banbta.net)(PORT = 1526)))(CONNECT_DATA =(SID = DSSR)(SERVER = DEDICATED)))
+
+##acceso a amb. desarrollo de SCE
+#DSSCE.world=(DESCRIPTION=(ADDRESS_LIST=
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles04)(Port=1521))
+# (ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=aquiles04)(Port=1526)))
+# (CONNECT_DATA=(SID=DSSCE)))
+
+#DSSCE.world = (DESCRIPTION = (ADDRESS_LIST =
+#      (ADDRESS = (COMMUNITY=tcp.world) (PROTOCOL = TCP)(HOST = scansced.bancodebogota.net)(PORT = 1526)))
+#    (CONNECT_DATA = (SERVICE_NAME = SCE_CCP)))
+
+#acceso a amb. pruebas de SCE
+#PRSCE.world =
+#  (DESCRIPTION =
+#    (ADDRESS = (PROTOCOL = TCP)(HOST = orapru63p64p)(PORT = 1526))
+#    (CONNECT_DATA = (SERVICE_NAME = PRSCE_CCP)
+#    )
+#  )
+
+PRCRTO =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = AQUILESMS37P.banbta.net)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SID = PRCRTO)
+      (SERVER = DEDICATED)
+    )
+  )
+  
+#esquema CRGESTION PRUEBAS EN LA NUBE
+PRATH =
+	(DESCRIPTION =
+		(ADDRESS_LIST =
+			(ADDRESS = (PROTOCOL = TCP)(HOST = CLATHPR-scan.banbta.net)(PORT = 1526))
+		)
+		(CONNECT_DATA =
+			(SERVER = DEDICATED)
+			(SERVICE_NAME = ATH_CCP)
+		)
+	)
+
+#esquema CRGESTION en la instancia que tiene el proyecto AVAL en la nube
+DSATH =
+  (DESCRIPTION =
+	(ADDRESS_LIST =
+		(ADDRESS = (PROTOCOL = TCP)(HOST = CLATHDS-scan.banbta.net)(PORT = 1526))
+	)
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ATH_CCP)
+    )
+  )
